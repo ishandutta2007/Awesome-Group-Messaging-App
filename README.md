@@ -57,9 +57,9 @@ The table below lists leading commercial SaaS products sorted by **Company Size 
 
 > 💡 **The Open-Source Advantage**: Self-hosted and open-source group messaging platforms deliver complete data sovereignty, custom security auditing, GDPR/HIPAA compliance, and zero per-user subscription fees.
 
-The table below features top open-source projects sorted by **GitHub Star Count** in **descending order**:
+The table below features top open-source projects sorted by **GitHub Stars_Count** in **descending order**:
 
-| Repository 📦 | Project & Key Description 🛠️ | GitHub Stars 🌟 |
+| Repository 📦 | Project & Key Description 🛠️ | GitHub_Stars 🌟 |
 | :--- | :--- | :--- |
 | **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** | **The ultimate open-source Slack alternative.** Enterprise team chat, audio/video conferencing, LiveChat, omnichannel customer support, matrix federation, and LDAP sync. **MIT License**. | [![Stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers) |
 | **[Mattermost](https://github.com/mattermost/mattermost)** | **Self-hosted developer workplace messaging.** Unlimited users & message history on free tier, single Linux binary deployment, PostgreSQL database, and enterprise security compliance. **AGPLv3 / MIT**. | [![Stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers) |
@@ -87,7 +87,7 @@ We welcome community contributions! Follow these simple steps:
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Add or update** entries in `README.md` maintaining table formatting.
-3. 🔍 Ensure open-source projects include official repository links and valid star badges.
+3. 🔍 Ensure open-source projects include official repository links and valid Stars_Badges.
 4. 🚀 Submit a **Pull Request** with a brief summary of additions.
 
 Refer to [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for general awesome list contribution standards.
