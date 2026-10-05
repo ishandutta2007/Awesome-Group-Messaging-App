@@ -1,163 +1,121 @@
-# Awesome-Group-Messaging-App
-
-# Awesome-Group-Messaging-App
-
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on Team Communication, Community Chat, End-to-End Encryption & Self-Hosted Messaging*
-
-**Last updated: October 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Group Messaging Apps**. These tools help teams, communities, and families stay connected through real-time text, voice, video, file sharing, and organized channels — whether hosted in the cloud or self-hosted for full data sovereignty.
-
-
-
-**Examples** include GroupMe, WhatsApp, Telegram, Signal, Discord, Slack, Viber, Line, WeChat, and Band (the category leaders).
-
-
-
-**Open-source emphasis**: The open-source group messaging ecosystem is **exceptionally mature and production-proven**. **Element/Matrix** provides a decentralized, end-to-end encrypted protocol with bridges to WhatsApp, Signal, and Slack . **Mattermost** offers unlimited users and message history on its free self-hosted tier . **Rocket.Chat** delivers a complete Slack replacement with MIT-licensed core . **Zulip** brings unique topic-based threading with Apache 2.0 licensing . **Nextcloud Talk** integrates group chat, video calls, and file sharing into a single self-hosted platform .
-
-
-
-## 📖 Table of Contents
-
-
-
-- [☁️ SaaS/Hosted Platforms](#-saas-hosted-platforms)
-
-- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
-
-- [🤝 How to Contribute](#how-to-contribute)
-
-- [⚠️ Disclaimer](#-disclaimer)
-
-
-
-## ☁️ SaaS/Hosted Platforms
-
-
-
-> **📊 Market Context**: The global group messaging app market is estimated at **~$70B in 2026**, growing toward **~$150B by 2032**. The sector is **moderately fragmented** — **WhatsApp** and **Telegram** dominate consumer messaging with **1024** and **200,000 member group limits** respectively , while **Discord** and **Slack** lead community and workplace communication, and **Signal** owns the privacy-first segment. **Pricing varies dramatically**: **GroupMe**, **WhatsApp**, **Telegram**, **Signal**, **Viber**, **Line**, **WeChat**, and **Band** are **completely free** with optional in-app purchases for stickers and storage , while **Discord Nitro** is **$9.99/month** and **Slack Pro** starts at **$7.25/user/month** . **Slack's free tier caps message history at 90 days** . No single vendor holds a winner-take-all position; users typically run multiple messaging apps for different contexts.
-
-
-
-| Platform | Description | Pricing (Starting Tier) | Free Tier Limits | Company Size |
-
-|----------|-------------|------------------------|------------------|--------------|
-
-| **[WhatsApp](https://www.whatsapp.com/)** | **The world's most used messaging app.** End-to-end encrypted groups, Communities, voice/video calls, and file sharing. | **Free** — no paid tier. | **Free**: Group chats up to **1,024 members**, 32-person video calls, end-to-end encryption, Communities with linked groups . | **Part of Meta (~$165B revenue)** |
-
-| **[Telegram](https://telegram.org/)** | **Feature-rich cloud messaging.** Massive groups, channels, bots, 2GB file sharing, and cross-device sync. | **Free** — no paid tier. **Premium**: **$4.99/month** for larger uploads and faster downloads . | **Free**: Group chats up to **200,000 members**, channels with unlimited subscribers, 2GB file uploads, bots, 100% free with no ads . | **Private (~$10B valuation est.)** |
-
-| **[Signal](https://signal.org/)** | **The gold standard for private messaging.** End-to-end encryption by default, no ads, no tracking, nonprofit. | **Free** — nonprofit, no paid tier. | **Free**: Group chats up to **1,000 members**, group calls up to **50 people**, end-to-end encryption by default, disappearing messages, no ads . | **Nonprofit (Signal Foundation)** |
-
-| **[Discord](https://discord.com/)** | **The community chat platform.** Servers, channels, voice/video, roles, and Go Live streaming. | **Free** — core features. **Nitro Basic**: **$4.99/month**. **Nitro**: **$9.99/month** . | **Free**: Unlimited servers, channels, and messages, up to **100 servers**, group calls up to **25 people**, voice/video calls, screen sharing (720p/30fps), file uploads . | **Private (~$15B valuation est.)** |
-
-| **[Slack](https://slack.com/)** | **The workplace communication standard.** Channels, threads, huddles, integrations, and workflow automation. | **Free**: **$0**. **Pro**: **$7.25/user/month** (annual) or **$8.75** monthly. **Business+**: **$12.50/user/month** . | **Free**: **90-day message history**, up to **10 app integrations**, 1:1 external messages, basic AI features, SAML SSO, SCIM . | **Part of Salesforce (~$37.9B revenue)** |
-
-| **[GroupMe](https://groupme.com/)** | **Simple, free group chat.** Polls, events, media sharing, and unlimited group members. | **Free** — every feature is free. No premium tiers, no paywalls . | **Free**: Unlimited group members, polls, events, reactions, media sharing, no ads, no "upgrade to unlock" prompts . **In-app emoji packs**: **$0.99–$1.99** . | **Part of Microsoft/Skype** |
-
-| **[Viber](https://www.viber.com/)** | **Messaging with Communities, Channels, and group calls.** | **Free** — no paid tier. | **Free**: Group chats up to **250 members**, Communities and Channels with unlimited members, group calls up to **60 people**, polls, quizzes, @mentions . | **Part of Rakuten** |
-
-| **[Line](https://line.me/)** | **The dominant messaging app in Japan and Taiwan.** Stickers, group chats, and large-scale network chatrooms. | **Free** — no paid tier. | **Free**: Groups up to **500 members**, large-scale network chatrooms up to **5,000 members**, voice/video calls, Letter Sealing encryption . | **Private (Line Corporation, part of Z Holdings)** |
-
-| **[WeChat](https://www.wechat.com/)** | **China's super-app.** Messaging, payments, mini-programs, and social networking. | **Free** — no paid tier. | **Free**: Group chats up to **500 members**, group video calls up to **15 people**, Moments, WeChat Pay, mini-programs, Official Accounts . | **Part of Tencent (~$100B revenue)** |
-
-| **[Band](https://band.us/)** | **Group organization app from Naver.** Feeds, calendars, polls, file sharing, and group calls. | **Free** — no paid tier. **Storage add-ons**: **$19.99** for 100GB (6 months) or **$39.99** (1 year) . | **Free**: Unlimited groups, feeds, calendars, polls, file sharing, group calls, instant notifications, works on all devices . | **Part of Naver (~$2B+ revenue est.)** |
-
-
-
-## 🔓 Open-Source GitHub Projects
-
-
-
-| Repo | Description | Stars |
-
-|------|-------------|-------|
-
-| **[Element (Matrix)](https://github.com/element-hq/element-web)** — **The flagship client for the Matrix protocol — a decentralized, end-to-end encrypted messaging network.** **Apache 2.0** licensed . **Federation** allows users on different servers to communicate seamlessly . **End-to-end encryption by default**, group chats, channels, file sharing, and **bridges to WhatsApp, Signal, and Slack** via mautrix . **Self-hostable** on your own infrastructure, including Kubernetes . **No phone number required** for registration . | [![Stars](https://img.shields.io/github/stars/element-hq/element-web?style=social&color=white)](https://github.com/element-hq/element-web/stargazers) | ~12,000 |
-
-| **[Mattermost](https://github.com/mattermost/mattermost)** — **Open-source Slack alternative with unlimited users and message history on the free tier.** **Team Edition**: Free, unlimited messages, unlimited channels, unlimited users . **AGPLv3 source / MIT binary** . Single Linux binary with PostgreSQL . **Professional**: **$10/user/month** adds guest accounts and compliance exports . **Self-hosted on a $40/month server** for a 50-person team costs **$480/year** in infrastructure — **$7.20/user/month** . | [![Stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers) | ~35,000 |
-
-| **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** — **The most complete free Slack replacement.** **MIT licensed core** . **Starter plan**: Free, up to **50 users**, self-hosted . **Community edition**: Free for teams that have outgrown Starter user limits . **Features**: Audio/video conferencing, guest access, screen/file sharing, LiveChat, LDAP group sync, and Matrix protocol compatibility . **Pro**: **€4.00/user/month** . | [![Stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers) | ~42,000 |
-
-| **[Zulip](https://github.com/zulip/zulip)** — **Organized team chat for distributed teams.** **Unique topic-based threading** — conversations are organized by subject, not time . **Apache 2.0** licensed, **100% open source** . **Cloud Free**: **10,000 messages** of search history, 5GB file storage . **Cloud Standard**: **$6.67/user/month** (annual) — **free for open-source projects and non-profits** . **Self-hosting**: ~2GB RAM required . | [![Stars](https://img.shields.io/github/stars/zulip/zulip?style=social&color=white)](https://github.com/zulip/zulip/stargazers) | ~24,000 |
-
-| **[Nextcloud Talk](https://github.com/nextcloud/spreed)** — **Chat, video, and audio calls integrated into Nextcloud.** **Fully self-hosted**, on-premise, data never leaves your server . **Features**: Group and 1:1 calls, webinars and public web meetings, individual and group chat, screen sharing, mobile push notifications, integration with Nextcloud Files and Groupware . **No account limits** on self-hosted instances . | [![Stars](https://img.shields.io/github/stars/nextcloud/spreed?style=social&color=white)](https://github.com/nextcloud/spreed/stargazers) | ~1,500 |
-
-| **[Jitsi Meet](https://github.com/jitsi/jitsi-meet)** — **Fully encrypted, 100% open-source video conferencing with built-in group chat.** **No account needed** . **Completely free, never a paywall** . Use the public **meet.jit.si** service or **self-host for free** . Features: Video conferencing, screen sharing, group chat, recording (via integrations), and Etherpad document collaboration . | [![Stars](https://img.shields.io/github/stars/jitsi/jitsi-meet?style=social&color=white)](https://github.com/jitsi/jitsi-meet/stargazers) | ~6,000 |
-
-| **[Stoat (formerly Revolt)](https://github.com/revoltchat/revolt)** — **The closest open-source Discord alternative in design and usability.** **Self-hostable, GDPR-friendly, no invasive tracking** . **Text and voice channels, community servers, roles, and threads** . **740,000+ users** . **Active development** with desktop, web, and mobile clients . **AGPLv3** . | [![Stars](https://img.shields.io/github/stars/revoltchat/revolt?style=social&color=white)](https://github.com/revoltchat/revolt/stargazers) | ~8,000 |
-
-| **[Campfire](https://github.com/basecamp/campfire)** — **Super simple, free group chat that requires no subscription.** **Self-hosted** group chat application . **No subscription, no account requirements** . **Released as free and open-source** . **Lightweight and easy to deploy** . **MIT License** . | [![Stars](https://img.shields.io/github/stars/basecamp/campfire?style=social&color=white)](https://github.com/basecamp/campfire/stargazers) | ~1,500 |
-
-| **[Chatto](https://github.com/chattocorp/chatto)** — **Open-source team messenger with privacy at its core.** **Self-hosted** team chat solution . **Built by one developer over the past year** . **Still early in development cycle** (stable 1.0 release pending) . **MIT License** . | [![Stars](https://img.shields.io/github/stars/chattocorp/chatto?style=social&color=white)](https://github.com/chattocorp/chatto/stargazers) | ~500 |
-
-
-
-**Additional open-source options worth exploring:**
-
-
-
-| Repo | Description |
-
-|------|-------------|
-
-| **[Guardyn](https://github.com/guardyn/guardyn)** — **Privacy-focused secure messenger with post-quantum E2EE (PQXDH/ML-KEM).** **OpenMLS groups**, SFrame voice/video, Sealed Sender . **Self-hostable, Kubernetes-native, Apache 2.0** . **Dart-based** . |
-
-| **[ɳChat](https://github.com/nself-org/chat)** — **Open-source self-hosted messaging application built on ɳSelf.** Real-time team and personal chat with video calls, bots, moderation, and white-label support . **MIT License** . |
-
-| **[OpenGlass](https://github.com/jojouHZ/openglass)** — **Self-hosted secure messenger with two privacy layers.** 1:1 and group chats (party/raid model), attachments, edit/delete, read receipts, typing indicators, web push . |
-
-| **[CritterChat](https://pypi.org/project/critterchat/)** — **Web-based chat program you can host yourself.** Direct messaging, private group conversations, public rooms with optional auto-join, mobile and desktop frontend . |
-
-| **[Fosscord/Spacebar](https://github.com/spacebarchat/server)** — **Free open-source self-hostable Discord-compatible communication platform.** Drop-in Discord API compatibility with native clients . |
-
-| **[Zulip 12.0](https://blog.zulip.com/)** — **Latest major release of Zulip (April 2026).** Organized team chat ideal for both live and asynchronous communication . |
-
-
-
-## 🤝 How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## ⚠️ Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Group messaging apps handle sensitive personal and organizational communications; ensure compliance with GDPR, CCPA, and applicable data protection regulations.
-
-- **Open-source reality**: The open-source ecosystem for group messaging is **exceptionally mature and production-proven**. **Element/Matrix** provides a decentralized, end-to-end encrypted protocol with bridges to major platforms . **Mattermost** offers unlimited users and message history on its free self-hosted tier — a 50-person team can run on a **$40/month server** . **Rocket.Chat** delivers a complete Slack replacement with MIT-licensed core . **Zulip** brings unique topic-based threading with Apache 2.0 licensing and free plans for open-source projects . **Nextcloud Talk** integrates chat, video, and file sharing into a single self-hosted platform . However, **commercial platforms** (WhatsApp, Telegram, Discord, Slack) provide **massive network effects, polished mobile apps, and seamless onboarding** that open-source alternatives may lack. The open-source path is **genuinely viable** for organizations prioritizing data sovereignty, cost control, and privacy.
-
-- **Pricing caveat**: All pricing figures are **verified against cited search results** but may change without notice. **Slack's free tier caps message history at 90 days** . **Telegram Premium is $4.99/month** . **Discord Nitro is $9.99/month** . **Zulip Cloud Standard is $6.67/user/month** (free for open-source projects) . **Rocket.Chat Pro is €4.00/user/month** . **Mattermost Professional is $10/user/month** . Always check the provider's official page for current pricing.
-
-
+# 💬 Awesome Group Messaging Apps
+
+![Awesome Group Messaging Apps](./assets/banner.svg)
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License" />
+  <img src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg" alt="PRs Welcome" />
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 ---
 
+## 📌 Overview & SEO Insights
 
+Welcome to the definitive, community-curated directory of **Group Messaging Apps**, **Team Communication Software**, and **Self-Hosted Open-Source Messaging Solutions**. Whether you are building an enterprise workplace, managing a global community, or setting up a privacy-focused decentralized chat server, this list details top commercial SaaS platforms and production-proven open-source GitHub repositories.
 
-**Made for team leads, community managers, privacy advocates, and self-hosting enthusiasts.**
+* **Key Categories**: Workplace Team Chat, Community Platforms, End-to-End Encrypted (E2EE) Messaging, Decentralized & Federated Protocols, Self-Hosted Slack/Discord Alternatives.
+* **Target Audience**: CTOs, DevOps Engineers, System Administrators, Community Managers, Privacy Advocates, and Developers.
 
-Let's make group messaging more open, transparent, and private.
+---
+
+## 📖 Table of Contents
+
+- [☁️ SaaS & Commercial Group Messaging Platforms](#%EF%B8%8F-saas--commercial-group-messaging-platforms)
+- [🔓 Open-Source & Self-Hosted GitHub Repositories](#-open-source--self-hosted-github-repositories)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer & Compliance](#%EF%B8%8F-disclaimer--compliance)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+
+---
+
+## ☁️ SaaS & Commercial Group Messaging Platforms
+
+> 📊 **Market Context & Industry Dynamics**: The global group messaging and team collaboration market is estimated at **~$70 Billion in 2026** and is projected to expand to **~$150 Billion by 2032** (CAGR ~13.5%). The sector is **moderately fragmented**: consumer chat is dominated by tech giants (Meta's WhatsApp, Tencent's WeChat, Telegram), workplace communications are led by enterprise giants (Salesforce's Slack, Microsoft Teams), while community-first spaces (Discord) and privacy-first tools (Signal) own distinct segments. No single platform occupies a winner-take-all monopoly, as organizations and consumers routinely utilize complementary tools across different social and professional domains.
+
+The table below lists leading commercial SaaS products sorted by **Company Size (Market Capitalization / Valuation / Revenue)** in **descending order**:
+
+| Platform 🚀 | Key Description 📝 | Starting Pricing Tier 💰 | Free Tier Limits 🎁 | Company Size (Valuation / Revenue) 🏢 |
+| :--- | :--- | :--- | :--- | :--- |
+| **[GroupMe](https://groupme.com/)** | **Simple, ubiquitous group messaging.** Features polls, event scheduling, media sharing, and cross-platform SMS integration. | **$0.00 / month** (100% Free core service) | **Free Forever**: Unlimited group members, unlimited groups, polls, event tracking, reactions, media sharing, zero ads. Optional in-app emoji packs ($0.99–$1.99). | **~$3.1 Trillion Market Cap** (Parent: Microsoft / Skype) |
+| **[WhatsApp](https://www.whatsapp.com/)** | **World's largest messaging platform.** Default end-to-end encryption, Communities, group voice/video calls, and document sharing. | **$0.00 / month** (100% Free consumer tier) | **Free Forever**: Group chats up to **1,024 members**, 32-person video calls, E2EE security, Communities linking multiple groups. | **~$1.5 Trillion Market Cap** (Parent: Meta / ~$165B Annual Revenue) |
+| **[WeChat](https://www.wechat.com/)** | **Dominant super-app in Asia.** Seamlessly combines group messaging, voice/video calls, mini-programs, and digital payments. | **$0.00 / month** (100% Free base app) | **Free Forever**: Group chats up to **500 members**, 15-person group video calls, Moments feed, Official Accounts, WeChat Pay integration. | **~$450 Billion Market Cap** (Parent: Tencent / ~$100B Annual Revenue) |
+| **[Slack](https://slack.com/)** | **Industry standard enterprise workspace chat.** Organized channels, threaded replies, huddles, 2,600+ app integrations, and workflow automation. | **$7.25 / user / month** (Annual billing; $8.75 monthly) | **Free Tier**: **90-day searchable message history**, up to 10 app integrations, 1:1 external huddles, SAML/SCIM SSO support. | **~$300 Billion Market Cap** (Parent: Salesforce / ~$37.9B Annual Revenue) |
+| **[Discord](https://discord.com/)** | **Leading community and voice platform.** Rich server structures, text/voice/video channels, custom roles, and low-latency streaming. | **$4.99 / month** (Nitro Basic) or **$9.99 / month** (Full Nitro) | **Free Forever**: Up to **100 servers**, unlimited text messages & history, 25-person video calls, screen sharing (720p/30fps), 8MB file uploads. | **~$15 Billion Valuation** (Private / Venture Backed) |
+| **[Viber](https://www.viber.com/)** | **Global messaging & voice platform.** Supports large Communities, broadcast Channels, HD group calls, and interactive polls. | **$0.00 / month** (Free base platform) | **Free Forever**: Group chats up to **250 members**, unlimited Community members, 60-person group audio calls, end-to-end encryption. | **~$12 Billion Market Cap** (Parent: Rakuten Group / ~$14B Revenue) |
+| **[Telegram](https://telegram.org/)** | **Feature-packed cloud messaging.** Supports massive groups, public broadcast channels, interactive bots, and 2GB file sharing. | **$4.99 / month** (Telegram Premium for 4GB uploads & speed) | **Free Forever**: Group chats up to **200,000 members**, unlimited channel subscribers, 2GB single file uploads, cloud sync across all devices. | **~$10 Billion Valuation** (Private / Independent) |
+| **[Line](https://line.me/)** | **Leading team & social messenger in Japan/Taiwan.** Rich sticker ecosystem, group voice/video calls, and social timeline feeds. | **$0.00 / month** (Free consumer application) | **Free Forever**: Groups up to **500 members**, OpenChat rooms up to **5,000 members**, Letter Sealing E2EE encryption, group voice/video calls. | **~$8 Billion Market Cap** (Parent: LY Corporation / Z Holdings) |
+| **[Band](https://band.us/)** | **Group organization & community management.** Feeds, shared calendars, polls, attendance lists, file libraries, and live streams. | **$0.00 / month** (Free base suite) | **Free Forever**: Unlimited group members, shared group calendars, polls, notice boards, file storage, live video streaming. Storage add-ons ($19.99/6mo). | **~$7 Billion Market Cap** (Parent: Naver / ~$2B+ Revenue) |
+| **[Signal](https://signal.org/)** | **The gold standard for private communication.** Default end-to-end encryption, zero tracking, zero metadata retention, non-profit backed. | **$0.00 / month** (Non-profit foundation, no paid tiers) | **Free Forever**: Group chats up to **1,000 members**, group video calls up to **50 participants**, disappearing messages, zero advertisements. | **Non-Profit Foundation** (~$50M+ Annual Operating Budget & Endowment) |
+
+---
+
+## 🔓 Open-Source & Self-Hosted GitHub Repositories
+
+> 💡 **The Open-Source Advantage**: Self-hosted and open-source group messaging platforms deliver complete data sovereignty, custom security auditing, GDPR/HIPAA compliance, and zero per-user subscription fees.
+
+The table below features top open-source projects sorted by **GitHub Star Count** in **descending order**:
+
+| Repository 📦 | Project & Key Description 🛠️ | GitHub Stars 🌟 |
+| :--- | :--- | :--- |
+| **[Rocket.Chat](https://github.com/RocketChat/Rocket.Chat)** | **The ultimate open-source Slack alternative.** Enterprise team chat, audio/video conferencing, LiveChat, omnichannel customer support, matrix federation, and LDAP sync. **MIT License**. | [![Stars](https://img.shields.io/github/stars/RocketChat/Rocket.Chat?style=social&color=white)](https://github.com/RocketChat/Rocket.Chat/stargazers) |
+| **[Mattermost](https://github.com/mattermost/mattermost)** | **Self-hosted developer workplace messaging.** Unlimited users & message history on free tier, single Linux binary deployment, PostgreSQL database, and enterprise security compliance. **AGPLv3 / MIT**. | [![Stars](https://img.shields.io/github/stars/mattermost/mattermost?style=social&color=white)](https://github.com/mattermost/mattermost/stargazers) |
+| **[Zulip](https://github.com/zulip/zulip)** | **Organized topic-based team chat.** Combines real-time chat with asynchronous email-like threading. Apache 2.0 licensed, 100% open source, used by open-source communities worldwide. | [![Stars](https://img.shields.io/github/stars/zulip/zulip?style=social&color=white)](https://github.com/zulip/zulip/stargazers) |
+| **[Signal Server](https://github.com/signalapp/Signal-Server)** | **Official server backend for Signal Messenger.** High-performance Java engine powering default end-to-end encrypted messaging, group state management, and sealed sender routing. **AGPLv3**. | [![Stars](https://img.shields.io/github/stars/signalapp/Signal-Server?style=social&color=white)](https://github.com/signalapp/Signal-Server/stargazers) |
+| **[Matrix Synapse](https://github.com/matrix-org/synapse)** | **Reference homeserver implementation for Matrix.** Powers decentralized, federated group communication across millions of matrix users worldwide. **Apache 2.0**. | [![Stars](https://img.shields.io/github/stars/matrix-org/synapse?style=social&color=white)](https://github.com/matrix-org/synapse/stargazers) |
+| **[Element (Matrix)](https://github.com/element-hq/element-web)** | **Flagship web client for the Matrix protocol.** Decentralized, end-to-end encrypted messaging, cross-signing security, group video calls, and bridges to Slack, WhatsApp, and Telegram. **Apache 2.0**. | [![Stars](https://img.shields.io/github/stars/element-hq/element-web?style=social&color=white)](https://github.com/element-hq/element-web/stargazers) |
+| **[Fosscord / Spacebar](https://github.com/spacebarchat/server)** | **Open-source Discord-compatible communication server.** Drop-in replacement server supporting native Discord API endpoints, voice channels, and self-hosted instances. **AGPLv3**. | [![Stars](https://img.shields.io/github/stars/spacebarchat/server?style=social&color=white)](https://github.com/spacebarchat/server/stargazers) |
+| **[Stoat / Revolt](https://github.com/revoltchat/revolt)** | **Privacy-focused Discord alternative.** Built for community servers with text/voice channels, role permissions, custom emojis, and zero invasive telemetry. **AGPLv3**. | [![Stars](https://img.shields.io/github/stars/revoltchat/revolt?style=social&color=white)](https://github.com/revoltchat/revolt/stargazers) |
+| **[SimpleX Chat](https://github.com/simplex-chat/simplex-chat)** | **100% private messaging network with no user IDs.** Uses unidirectional message queues rather than user identifiers, ensuring unmatched metadata privacy for 1:1 and group chats. **GPLv3**. | [![Stars](https://img.shields.io/github/stars/simplex-chat/simplex-chat?style=social&color=white)](https://github.com/simplex-chat/simplex-chat/stargazers) |
+| **[Jitsi Meet](https://github.com/jitsi/jitsi-meet)** | **WebRTC video conferencing with built-in group chat.** 100% open source, fully encrypted video calls, screen sharing, etherpad document collaboration, and zero account requirement. **Apache 2.0**. | [![Stars](https://img.shields.io/github/stars/jitsi/jitsi-meet?style=social&color=white)](https://github.com/jitsi/jitsi-meet/stargazers) |
+| **[Delta Chat](https://github.com/deltachat/deltachat-core-rust)** | **Decentralized messaging powered by standard email servers.** Uses existing email infrastructure (IMAP/SMTP) with automatic Autocrypt end-to-end encryption for group messaging. **GPLv3**. | [![Stars](https://img.shields.io/github/stars/deltachat/deltachat-core-rust?style=social&color=white)](https://github.com/deltachat/deltachat-core-rust/stargazers) |
+| **[Nextcloud Talk](https://github.com/nextcloud/spreed)** | **Self-hosted chat & video meeting suite.** Deeply integrated into Nextcloud ecosystem for seamless file sharing, group video webinars, screen sharing, and mobile notifications. **AGPLv3**. | [![Stars](https://img.shields.io/github/stars/nextcloud/spreed?style=social&color=white)](https://github.com/nextcloud/spreed/stargazers) |
+| **[Campfire](https://github.com/basecamp/campfire)** | **Lightweight self-hosted team chat from 37signals/Basecamp.** Simple, zero-subscription group chat software designed for quick deployment and straightforward team messaging. **MIT License**. | [![Stars](https://img.shields.io/github/stars/basecamp/campfire?style=social&color=white)](https://github.com/basecamp/campfire/stargazers) |
+| **[Guardyn](https://github.com/guardyn/guardyn)** | **Post-quantum end-to-end encrypted secure messenger.** Features OpenMLS group key agreement, ML-KEM post-quantum crypto, SFrame voice/video, and Sealed Sender metadata protection. **Apache 2.0**. | [![Stars](https://img.shields.io/github/stars/guardyn/guardyn?style=social&color=white)](https://github.com/guardyn/guardyn/stargazers) |
+| **[Chatto](https://github.com/chattocorp/chatto)** | **Modern privacy-first self-hosted team chat.** Built for small teams seeking a simple, self-contained communication platform with minimal overhead. **MIT License**. | [![Stars](https://img.shields.io/github/stars/chattocorp/chatto?style=social&color=white)](https://github.com/chattocorp/chatto/stargazers) |
+| **[OpenGlass](https://github.com/jojouHZ/openglass)** | **Self-hosted messenger with multi-layer privacy.** Party/raid model group chats, encrypted media uploads, typing indicators, and push notification relays. **MIT License**. | [![Stars](https://img.shields.io/github/stars/jojouHZ/openglass?style=social&color=white)](https://github.com/jojouHZ/openglass/stargazers) |
+| **[ɳChat](https://github.com/nself-org/chat)** | **Self-hosted real-time messaging application.** Built on ɳSelf framework with support for team chat, video calls, moderation tools, and white-label branding. **MIT License**. | [![Stars](https://img.shields.io/github/stars/nself-org/chat?style=social&color=white)](https://github.com/nself-org/chat/stargazers) |
+
+---
+
+## 🤝 How to Contribute
+
+We welcome community contributions! Follow these simple steps:
+
+1. 🍴 **Fork** this repository.
+2. 📝 **Add or update** entries in `README.md` maintaining table formatting.
+3. 🔍 Ensure open-source projects include official repository links and valid star badges.
+4. 🚀 Submit a **Pull Request** with a brief summary of additions.
+
+Refer to [Awesome-Awesome-Awesome](https://github.com/ishandutta2007/Awesome-Awesome-Awesome) for general awesome list contribution standards.
+
+---
+
+## ⚠️ Disclaimer & Compliance
+
+* **Community-Curated**: This list is maintained for educational and informational purposes only and does not constitute official vendor endorsements.
+* **Data Sovereignty & Security**: Group messaging applications process sensitive organizational and personal data. Always review security compliance standards (GDPR, HIPAA, SOC 2, CCPA) prior to deployment.
+* **Pricing Notice**: SaaS pricing and free tier quotas are subject to change by vendor management. Always verify directly on official provider pricing pages.
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Group-Messaging-App&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Group-Messaging-App&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you for exploring **Awesome Group Messaging App**! If you find this curated resource helpful:
+* 🌟 **Star** this repository to stay updated on new team chat tools and open-source updates.
+* 🔀 **Fork** it to maintain your own tailored collection or contribute additions back to the community.
+* 📢 **Share** it with system administrators, tech leads, and developers.
+* ☕ **Sponsor** or buy me a coffee via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+<p align="center">Made with ❤️ for team leads, developers, privacy advocates, and self-hosting enthusiasts.</p>

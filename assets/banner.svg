@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="accentCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#e879f9" />
+    </linearGradient>
+
+    <!-- Glassmorphism Card Overlay -->
+    <linearGradient id="glassBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="rgba(255, 255, 255, 0.07)" />
+      <stop offset="100%" stop-color="rgba(255, 255, 255, 0.02)" />
+    </linearGradient>
+
+    <!-- Filters for Glow Effects -->
+    <filter id="glowCyan" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="glowPurple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="18" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- CSS Keyframe Animations -->
+    <style>
+      @keyframes floatParticle {
+        0% { transform: translateY(0px) scale(1); opacity: 0.4; }
+        50% { transform: translateY(-15px) scale(1.15); opacity: 0.8; }
+        100% { transform: translateY(0px) scale(1); opacity: 0.4; }
+      }
+
+      @keyframes pulseGlow {
+        0%, 100% { opacity: 0.35; transform: scale(1); }
+        50% { opacity: 0.65; transform: scale(1.08); }
+      }
+
+      @keyframes flowLine {
+        0% { stroke-dashoffset: 400; }
+        100% { stroke-dashoffset: 0; }
+      }
+
+      @keyframes chatBubbleSlide {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-8px); }
+      }
+
+      .particle-1 { animation: floatParticle 6s ease-in-out infinite; }
+      .particle-2 { animation: floatParticle 8s ease-in-out infinite 1s; }
+      .particle-3 { animation: floatParticle 7s ease-in-out infinite 2s; }
+      
+      .bg-glow-1 { animation: pulseGlow 10s ease-in-out infinite; transform-origin: 200px 100px; }
+      .bg-glow-2 { animation: pulseGlow 12s ease-in-out infinite 3s; transform-origin: 1000px 220px; }
+
+      .connecting-line {
+        stroke-dasharray: 12, 12;
+        animation: flowLine 20s linear infinite;
+      }
+
+      .bubble-1 { animation: chatBubbleSlide 5s ease-in-out infinite; }
+      .bubble-2 { animation: chatBubbleSlide 6s ease-in-out infinite 1.5s; }
+      .bubble-3 { animation: chatBubbleSlide 5.5s ease-in-out infinite 3s; }
+    </style>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="320" rx="16" fill="url(#bgGradient)" />
+
+  <!-- Animated Glowing Background Orbs -->
+  <circle class="bg-glow-1" cx="200" cy="100" r="180" fill="#38bdf8" opacity="0.12" filter="url(#glowCyan)" />
+  <circle class="bg-glow-2" cx="1000" cy="220" r="220" fill="#a855f7" opacity="0.15" filter="url(#glowPurple)" />
+
+  <!-- Animated Network Connection Lines in Background -->
+  <path class="connecting-line" d="M 100,260 Q 300,180 500,260 T 900,200 T 1150,250" fill="none" stroke="rgba(56, 189, 248, 0.25)" stroke-width="2" />
+  <path class="connecting-line" d="M 50,80 Q 350,140 650,60 T 1100,100" fill="none" stroke="rgba(192, 132, 252, 0.2)" stroke-width="2" />
+
+  <!-- Dynamic Floating Decorative Chat Bubbles (Background Accents) -->
+  <g class="bubble-1" opacity="0.4">
+    <rect x="90" y="45" width="110" height="36" rx="18" fill="url(#glassBg)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <circle cx="115" cy="63" r="4" fill="#38bdf8" />
+    <rect x="126" y="59" width="50" height="8" rx="4" fill="rgba(255,255,255,0.3)" />
+  </g>
+
+  <g class="bubble-2" opacity="0.35">
+    <rect x="990" y="50" width="130" height="40" rx="20" fill="url(#glassBg)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <circle cx="1015" cy="70" r="5" fill="#e879f9" />
+    <rect x="1028" y="66" width="65" height="8" rx="4" fill="rgba(255,255,255,0.3)" />
+  </g>
+
+  <g class="bubble-3" opacity="0.3">
+    <rect x="1020" y="210" width="120" height="38" rx="19" fill="url(#glassBg)" stroke="rgba(255,255,255,0.15)" stroke-width="1" />
+    <circle cx="1042" cy="229" r="4" fill="#4ade80" />
+    <rect x="1054" y="225" width="55" height="8" rx="4" fill="rgba(255,255,255,0.3)" />
+  </g>
+
+  <!-- Central Glassmorphism Card Frame (Foreground Backdrop for High Contrast) -->
+  <rect x="150" y="35" width="900" height="250" rx="20" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(255, 255, 255, 0.12)" stroke-width="1.5" />
+
+  <!-- Main Foreground Content: Title & Subtitle -->
+  <g text-anchor="middle">
+    <!-- Top Category Pill -->
+    <rect x="475" y="58" width="250" height="30" rx="15" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1" />
+    <text x="600" y="78" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="1.5">AWESOME CURATED LIST</text>
+
+    <!-- Main Title -->
+    <text x="600" y="142" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">
+      Awesome Group Messaging Apps 💬
+    </text>
+
+    <!-- Subtitle -->
+    <text x="600" y="184" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="17" font-weight="400">
+      Comprehensive Directory of SaaS Platforms &amp; Open-Source Team Communication Solutions
+    </text>
+
+    <!-- Feature Tags Row -->
+    <g transform="translate(0, 212)">
+      <!-- Tag 1 -->
+      <rect x="340" y="0" width="140" height="28" rx="14" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.1)" />
+      <text x="410" y="19" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">🔒 End-to-End E2EE</text>
+
+      <!-- Tag 2 -->
+      <rect x="495" y="0" width="130" height="28" rx="14" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.1)" />
+      <text x="560" y="19" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">☁️ Enterprise SaaS</text>
+
+      <!-- Tag 3 -->
+      <rect x="640" y="0" width="135" height="28" rx="14" fill="rgba(255, 255, 255, 0.06)" stroke="rgba(255, 255, 255, 0.1)" />
+      <text x="707" y="19" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">🚀 Self-Hostable OS</text>
+    </g>
+  </g>
+
+  <!-- Ambient Animated Floating Particles -->
+  <circle class="particle-1" cx="220" cy="90" r="3" fill="#38bdf8" />
+  <circle class="particle-2" cx="980" cy="240" r="4" fill="#c084fc" />
+  <circle class="particle-3" cx="1050" cy="110" r="3" fill="#4ade80" />
+</svg>
